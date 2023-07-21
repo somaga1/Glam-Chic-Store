@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>All Products | Glamchic</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+   <style type="text/css">
+   	a{
+   		text-decoration: none;
+   		color: #34221a;
+   	}
+   	p{
+   		color: #34221a;
+   	}
+   </style>
+</head>
+<body>
+		<div class="container">
+		<div class="navbar">
+		<div class="logo">
+			<img src="images/glamchiclogo.jpg" width="100px" height="70px">
+		</div>
+		<nav>
+			<ul id="MenuItems">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="product.html">Products</a></li>
+				<li><a href="">About</a></li>
+				<li><a href="contact.html">Contact</a></li>
+				<li><a href="account.html">Account</a></li>
+			</ul>
+		</nav>
+		<a href="cart.html"><img src="images/carts.png" height="30px" width="30px"></a>
+		<img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+		
+	    </div>
+	   
+		
+	</div>
+
+<!------contact page----> 
+
+<div class="contact-page">
+	<div class="container">
+		<div class="row">
+			<div class="col-2">
+				<img src="images/contactus.png">
+			</div>
+
+			<div class="col-2">
+				<div class="column">
+      <form action="/action_page.php">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        <label for="country">Email Address</label>
+        <input type="email" id="lname" name="lastname" placeholder="E.g youremail@info.com">
+        <label for="subject">Subject</label>
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+        <a href="#"><input type="submit" value="Submit"></a>
+      </form>
+    </div>
+			</div>
+		</div>
+	</div>
+	
+</div>
+
+<!------------Footer---------->
+<div class="footer">
+	<div class="container">
+		<div class="row">
+			<div class="footer-col-1">
+				<h3>Download our app</h3>
+				<p>Download our app for andriod and ios</p>
+				<div class="app-logo">
+					<img src="images/appstore.png">
+				</div>
+				
+			</div>
+			<div class="footer-col-2">
+				<img src="images/glamchiclogo.jpg" height="250px" width="250px">
+				<p>For your trendy footware and bags</p>
+				
+			</div>
+			<div class="footer-col-3">
+				<h3>Useful Links</h3>
+				<ul>
+					<li>Coupons</li>
+					<li>Blog Posts</li>
+					<li>Return Policy</li>
+					<li>Join Affiliate</li>
+				</ul>
+				
+			</div>
+			<div class="footer-col-3">
+				<h3>Follow Us</h3>
+				<ul>
+					<li>Facebook</li>
+					<li>Instagram</li>
+					<li>Twitter</li>
+					<li>Youtube</li>
+				</ul>
+				
+			</div>
+			
+		</div>
+		<hr>
+		<p class="copyright">copyright 2021- Achinike Winifred</p>
+		
+	</div>
+	
+</div>
+<!--------- Js for toggle menu --------->
+
+
+<script type="text/javascript">
+	var MenuItems= document.getElementById("MenuItems");
+	MenuItems.style.maxHeight= "0px";
+
+	function menutoggle() {
+		if (MenuItems.style.maxHeight=="0px") 
+		{
+			MenuItems.style.maxHeight="200px";
+		}
+		else
+		{
+			MenuItems.style.maxHeight="0px";
+		}
+		
+	}
+	function quantity(){
+		let value=document.getElementById('quantity').value;
+		if (value>=1) {
+			let value=totalval;
+
+		} 
+		else {document.getElementById('product').style.display='none';
+	}
+
+	}
+
+</script>
+
+<!-- ------js for toggle form---- -->
+<script type="text/javascript">
+	var LoginForm = document.getElementById("LoginForm");
+	var RegForm = document.getElementById("RegForm");
+	var Indicator = document.getElementById("Indicator");
+	function register(){
+		RegForm.style.transform="translateX(0px)";
+		LoginForm.style.transform="translateX(0px)";
+		Indicator.style.transform="translateX(100px)";
+	}
+	function login(){
+		RegForm.style.transform="translateX(300px)";
+		LoginForm.style.transform="translateX(300px)";
+		Indicator.style.transform="translateX(0px)";
+	}
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

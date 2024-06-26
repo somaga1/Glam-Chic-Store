@@ -41,5 +41,3 @@ git clone https://github.com/somaga1/Glamchic.git
 
 Alternatively, you can download the zip file from GitHub and extract it to your web server's root directory.
 
-Open your browser and navigate to `http://localhost/Glamchic/` to view the website.
-

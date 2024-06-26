@@ -33,8 +33,6 @@ Glamchic store is a website that sells trendy footwear and bags for women who lo
 
 ## Installation
 
-To run this website locally, you need to have a web server installed on your machine. You can use any web server of your choice, such as Apache, Nginx, or Node.js.
-
 Clone this repository to your web server's root directory:
 
 ```bash
@@ -45,6 +43,3 @@ Alternatively, you can download the zip file from GitHub and extract it to your 
 
 Open your browser and navigate to `http://localhost/Glamchic/` to view the website.
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
